@@ -1,0 +1,88 @@
+{
+  "run_name": "baseline",
+  "track": "t02",
+  "created_at": "2026-11-15T04:22:57+00:00",
+  "git_sha": null,
+  "seed": 42,
+  "n_items": 40,
+  "runtime_seconds": 0.35,
+  "runtime_per_100_items_s": 0.875,
+  "machine": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel"
+  },
+  "config": {
+    "baseline": "single_global_laplacian_variance"
+  },
+  "metrics": [
+    {
+      "name": "Defect Recall@B",
+      "value": 0.85,
+      "direction": "higher",
+      "unit": "GT defects in top-B / GT defects",
+      "numerator": 17,
+      "denominator": 20,
+      "n": 40,
+      "slice": "all",
+      "primary": true,
+      "notes": "",
+      "extra": {}
+    },
+    {
+      "name": "Precision@B",
+      "value": 0.85,
+      "direction": "higher",
+      "unit": "GT defects in top-B / B",
+      "numerator": 17,
+      "denominator": 20,
+      "n": 40,
+      "slice": "all",
+      "primary": false,
+      "notes": "",
+      "extra": {}
+    },
+    {
+      "name": "False alarm in top-B",
+      "value": 0.0,
+      "direction": "lower",
+      "unit": "clean images in top-B / clean images",
+      "numerator": 0,
+      "denominator": 10,
+      "n": 20,
+      "slice": "light=day",
+      "primary": false,
+      "notes": "",
+      "extra": {}
+    },
+    {
+      "name": "False alarm in top-B",
+      "value": 0.5,
+      "direction": "lower",
+      "unit": "clean images in top-B / clean images",
+      "numerator": 1,
+      "denominator": 2,
+      "n": 4,
+      "slice": "light=dusk",
+      "primary": false,
+      "notes": "",
+      "extra": {}
+    },
+    {
+      "name": "False alarm in top-B",
+      "value": 0.25,
+      "direction": "lower",
+      "unit": "clean images in top-B / clean images",
+      "numerator": 2,
+      "denominator": 8,
+      "n": 16,
+      "slice": "light=night",
+      "primary": false,
+      "notes": "",
+      "extra": {}
+    }
+  ],
+  "extra": {
+    "notes": "Global Laplacian variance only"
+  }
+}
