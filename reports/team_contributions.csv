@@ -1,0 +1,2 @@
+member,git_author_name,git_email,role,modules_files,commit_shas,evidence_note,presenter
+Hoàng Bá Đạt (2A202603100),Hoang Ba Dat,hdat2031@gmail.com,Solo / Toàn bộ vai trò (Lead; Data; Core Algorithm; QA/Test; Review & Report),"src/pipeline.py; src/baseline_t02.py; tests/test_g07_t02_pipeline.py; reports/*",HEAD~5..HEAD,Thực hiện độc lập 100% toàn bộ pipeline E2E kiểm thử và báo cáo,yes
