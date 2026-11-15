@@ -1,0 +1,17 @@
+# ============================================================
+# Group config — EDIT ME (one per group). Values here override
+# the track defaults loaded from `track_config`.
+# ============================================================
+group_id: G07
+owner: "Hoang Ba Dat (2A202603100)"
+track_config: tracks/t02.yaml
+track: t02
+input: fixtures/t02_raw_qc
+output: out/
+seed: 42
+offline: true
+strict_provenance: true
+
+# Track params (merged over track_config.params). Freeze before evaluation.
+params:
+  budget: 20
